@@ -26,7 +26,7 @@ function App() {
   // Handle sending messages
   const sendMessage = async () => {
     if (name && message) {
-      await axios.post('https://localhost:5000/send-message', {
+      await axios.post('https://backchat-two.vercel.app/send-message', {
         name,
         message,
       });
